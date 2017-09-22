@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         odleglosc olx
 // @namespace    muskala
-// @version      0.1
+// @version      0.2
 // @description  odleglosc olx
 // @author       Marcin Muskala
-// @include      /.*olx.pl\/.*/
+// @include      /.*olx\.pl\/.*/
 // @grant        none
 // ==/UserScript==
 

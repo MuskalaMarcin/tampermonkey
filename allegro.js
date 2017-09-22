@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         domyslna kategoria allegro
-// @namespace    http://tampermonkey.net/
-// @version      0.1
+// @namespace    muskala
+// @version      0.2
 // @description  domyslna kategoria allegro
 // @author       Marcin Muska³a
-// @include      /.*allegro.*/
+// @include      /.*allegro\.pl.*/
 // @grant        none
 // @run-at document-start
 // ==/UserScript==
@@ -21,3 +21,5 @@
         window.location.href = url + '?' + expectedOrder;
     }
 })();
+
+//@TODO: give a shit
