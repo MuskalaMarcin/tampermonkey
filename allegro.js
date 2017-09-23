@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         domyslna kategoria allegro
 // @namespace    muskala
-// @version      0.2
+// @version      0.2.5
 // @description  domyslna kategoria allegro
-// @author       Marcin Muska³a
+// @author       Marcin Muskala
 // @include      /.*allegro\.pl.*/
 // @grant        none
 // @run-at document-start
@@ -18,7 +18,8 @@
             window.location.href = url.replace(orderRegex, expectedOrder);
         }
     } else if (url.indexOf('allegro.pl/kategoria') !== -1) {
-        window.location.href = url + '?' + expectedOrder;
+        var separator = url.indexOf('?') ===-1 ? '?' : '&';
+        window.location.href = url + separator + expectedOrder;
     }
 })();
 
