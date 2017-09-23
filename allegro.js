@@ -22,5 +22,3 @@
         window.location.href = url + separator + expectedOrder;
     }
 })();
-
-//@TODO: give a shit
