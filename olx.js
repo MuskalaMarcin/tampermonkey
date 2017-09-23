@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         odleglosc olx
 // @namespace    muskala
-// @version      0.2
+// @version      0.2.1
 // @description  odleglosc olx
 // @author       Marcin Muskala
-// @include      /.*olx\.pl\/.*/
+// @match        *://olx.pl/*
 // @grant        none
 // ==/UserScript==
 
@@ -17,5 +17,3 @@ $(document).ready(function() {
         $el.html($el.html().replace(new RegExp(value, 'g'), value * multiplier));
    });
 });
-
-//@TODO: give a shit
